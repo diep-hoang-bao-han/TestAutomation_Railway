@@ -1,5 +1,5 @@
 
-# 🚆 Railway Ticket Booking – Manual & Automation Testing
+# 🚆 Railway Ticket Booking – Automation Testing
 
 ![Java](https://img.shields.io/badge/Java-24-orange)
 ![Selenium](https://img.shields.io/badge/Selenium-4.31.0-green)
@@ -9,12 +9,14 @@
 
 ## 📌 Project Overview
 
-This project focuses on **Manual and Automation Testing** for a Railway Ticket Booking Website, covering core functionalities such as user authentication, account registration, password management, train schedules, and ticket booking.
+This project focuses on **automated functional testing** of a Railway Ticket Booking Website using Java, Selenium WebDriver, and TestNG.
 
-Automated tests are developed using **Java, Selenium WebDriver, and TestNG**, following the **Page Object Model (POM)** design pattern to improve code reusability and maintainability.
+The automation framework follows the **Page Object Model (POM)** design pattern to improve code reusability, maintainability, and test execution efficiency.
+
+Automated tests cover key application functionalities, with defects identified during testing documented in bug reports.
 
 **Application:** http://railwayb2.somee.com  
-**Role:** Manual & Automation Tester
+**Role:** Automation Tester
 
 ## 🛠️ Tech Stack
 
@@ -27,45 +29,50 @@ Automated tests are developed using **Java, Selenium WebDriver, and TestNG**, fo
 | Build Tool | Maven |
 | Driver Management | WebDriverManager 5.8.0 |
 | IDE | IntelliJ IDEA |
-| Documentation | Excel, Word |
 
-## 🔍 Testing Scope
+## 🔍 Automation Scope
 
-- **Login & Registration:** Authentication, input validation, and error handling.
+- **Authentication:** Login and Registration.
 - **Password Management:** Forgot Password, Reset Password, and Change Password.
-- **Ticket Booking:** Booking process and confirmation validation.
-- **My Ticket & Timetable:** Ticket management and train schedule functionality.
+- **Ticket Booking:** Ticket booking and confirmation validation.
+- **Ticket Management:** View and manage booked tickets.
+- **Train Timetable:** Train schedule functionality.
 
-## ✅ Key Responsibilities
+## ⚙️ Framework Highlights
 
-- Analyzed requirements and designed functional test cases.
-- Executed manual tests using positive, negative, and boundary scenarios.
-- Identified defects and documented bug reports with reproduction steps and screenshots.
-- Developed Selenium automation scripts using Java and TestNG.
-- Applied the Page Object Model (POM) to organize page interactions and test logic.
-- Organized reusable components for browser management and test execution.
+- Implemented Page Object Model (POM) architecture.
+- Developed reusable Page Objects and utility classes.
+- Centralized browser management using WebDriverFactory.
+- Organized test setup and execution using BaseTest and TestNG.
+- Managed project dependencies with Maven.
+- Documented defects identified during automation testing.
 
-## 📊 Project Deliverables
+## 📊 Test Artifacts
 
-| Deliverable | Details |
+| Artifact | Description |
 |---|---|
-| Manual Test Cases | [TC_Railway.xlsx](./TC_Railway.xlsx) |
-| Bug Reports | [Bug Report.docx](./Bug%20Report.docx) |
-| Automation Scripts | [View Test Scripts](./src/test/java/tests) |
-| Page Objects | [View Page Objects](./src/main/java/pages) |
-| Maven Configuration | [pom.xml](./pom.xml) |
+| [Automation Test Scripts](./src/test/java/tests) | Selenium automated test cases |
+| [Page Objects](./src/main/java/pages) | Reusable page classes |
+| [Test Case Documentation](./TC_Railway.xlsx) | Test scenarios and expected results |
+| [Bug Reports](./Bug%20Report.docx) | 8 documented defects identified during testing |
+| [Maven Configuration](./pom.xml) | Project dependencies |
 
-## ⚠️ Known Limitations
+## 🐞 Defect Reporting
 
-- SMTP server errors block certain password reset scenarios.
-- Account activation testing is limited by missing activation emails.
-- TC08 is documented separately due to application limitations.
+During test execution, **8 defects** were documented, including:
+
+- Incorrect validation and confirmation messages.
+- Missing warnings after repeated failed login attempts.
+- SMTP server errors blocking password reset scenarios.
+- UI message formatting inconsistencies.
+
+Each bug report includes reproduction steps, actual results, expected results, and screenshot evidence.
 
 ## 👩‍💻 Author
 
 **Diệp Hoàng Bảo Hân**  
-Manual & Automation Tester
+Automation Tester
 
 ---
 
-⭐ This project demonstrates hands-on experience in functional testing, defect reporting, and Selenium-based test automation.
+⭐ Selenium-based automation testing project demonstrating Page Object Model implementation, functional test automation, and defect reporting.
